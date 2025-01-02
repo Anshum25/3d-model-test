@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChronoX | Login & Watches</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+    <link rel="stylesheet" href="ChronoX.css" />
+    <style></style>
+  </head>
+  <body>
+    <body class="bgm">
+      <nav
+        class="navbar navbar-expand-md navbar-dark fixed-top"
+        style="
+          background-color: #000000;
+          height: 80px;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          font-size: 22px;
+        "
+      >
+        <a
+          style="
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+              sans-serif;
+          "
+          class="navbar-brand g"
+          href="#"
+          >ChronoX</a
+        >
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <div
+            class="navbar-nav ms-6"
+            style="
+              font-size: small;
+              font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+                'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+              font-size: large;
+            "
+          >
+            <a class="nav-item nav-link active" href="#">Home</a>
+            <a class="nav-item nav-link" href="#">Who We Are</a>
+            <a class="nav-item nav-link" href="#">Products</a>
+            <a class="nav-item nav-link" href="#">Contact Us</a>
+          </div>
+        </div>
+      </nav>
+      <div class="login-section">
+        <video autoplay muted loop id="bg-video">
+          <source src="vid.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
+        <div class="login-card">
+          <h2 class="text-center mb-4">Login</h2>
+          <form action="/login" method="POST">
+            <div class="mb-3">
+              <label for="username" class="form-label">Username</label>
+              <input
+                type="text"
+                class="form-control"
+                id="username"
+                name="username"
+                placeholder="Enter your username"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                name="password"
+                placeholder="Enter your password"
+                required
+              />
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Login</button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Watches Section -->
+      <div class="watches-section">
+        <div class="container">
+          <h2>Explore ChronoX Watches</h2>
+        </div>
+      </div>
+
+      <div class="ss d-flex justify-content-around">
+        <div class="sq">
+          <img src="ko.png" style="width: 375px; height: 400px" />
+          <h4 class="h">NWT Fossil Men's Grant Watch FS5090</h4>
+          <div class="d-flex">
+            <del><h5 style="opacity: 0.6">M.R.P. ₹3,999</h5> </del>
+            <p style="margin-bottom: 5px; margin-left: 10px">50% OFF</p>
+          </div>
+          <h4>Offer Price ₹ 2,999</h4>
+        </div>
+        <div class="sq">
+          <img src="ko1.png" style="width: 375px; height: 370px" />
+          <h4 class="h">
+            Daniel Wellington DW Watch Classi c St Mawes 40mm Rose Gold
+          </h4>
+          <div class="d-flex">
+            <del><h5 style="opacity: 0.6">M.R.P. ₹2,499</h5> </del>
+            <p style="margin-bottom: 5px; margin-left: 10px">40% OFF</p>
+          </div>
+          <h4>Offer Price ₹ 1,499</h4>
+        </div>
+        <div class="sq">
+          <img src="ko2.png" style="width: 375px; height: 370px" />
+          <h4 class="h">
+            Titan Workwear Men Silver Analog ue watch NL1698BMO1
+          </h4>
+          <div class="d-flex">
+            <del><h5 style="opacity: 0.6">M.R.P. ₹3,999</h5> </del>
+            <p style="margin-bottom: 5px; margin-left: 10px">25% OFF</p>
+          </div>
+          <h4>Offer Price ₹ 2,999</h4>
+        </div>
+        <div class="sq">
+          <img src="ko3.png" style="width: 375px; height: 370px" />
+          <h4 class="h">
+            Titan Urban Magic Blue Dial Multial Stainless Steel Strap watch
+          </h4>
+          <div class="d-flex">
+            <del><h5 style="opacity: 0.6">M.R.P. ₹4,999</h5> </del>
+            <p style="margin-bottom: 5px; margin-left: 10px">40% OFF</p>
+          </div>
+          <h4>Offer Price ₹ 2,999</h4>
+        </div>
+      </div>
+      <div class="ss d-flex justify-content-around">
+        <div class="sq" style="height: 540px">
+          <img src="ko31.png" style="width: 375px; height: 400px" />
+          <h4 class="h">
+            Titan Men's Metropolitan Luxe: Mu Itifunction blue Dial
+          </h4>
+          <div class="d-flex">
+            <del><h5 style="opacity: 0.6">M.R.P. ₹2,999</h5> </del>
+            <p style="margin-bottom: 5px; margin-left: 10px">17% OFF</p>
+          </div>
+          <h4>Offer Price ₹ 2,499</h4>
+        </div>
+        <div class="sq" style="height: fit-content">
+          <img
+            src="ko32.png"
+            style="width: 330px; height: 400px; padding-left: 70px"
+          />
+          <h4 class="h">
+            Titan Quartz Analog Black Dial Stai nless Steel Strap Watch for Men
+          </h4>
+          <div class="d-flex">
+            <del><h5 style="opacity: 0.6">M.R.P. ₹3,499</h5> </del>
+            <p style="margin-bottom: 5px; margin-left: 10px">43% OFF</p>
+          </div>
+          <h4>Offer Price ₹ 1,999</h4>
+        </div>
+        <div class="sq" style="height: fit-content">
+          <img
+            src="ko33.png"
+            style="width: 282px; height: 400px; padding-left: 70px"
+          />
+          <h4 class="h">
+            Titan Quartz Multifunction Black D ial Stainless Steel Strap Watch
+          </h4>
+          <div class="d-flex">
+            <del><h5 style="opacity: 0.6">M.R.P. ₹2,499</h5> </del>
+            <p style="margin-bottom: 2px; margin-left: 10px">20% OFF</p>
+          </div>
+          <h4>Offer Price ₹ 1,999</h4>
+        </div>
+        <div class="sq justify-content-center" style="height: 540px">
+          <img src="ko7.png" style="width: 375px; height: 400px" />
+          <h4 class="h">FOSSIL 50MM NATE Analog Watch - For Men JR1527</h4>
+          <div class="d-flex">
+            <del><h5 style="opacity: 0.6">M.R.P. ₹4,999</h5> </del>
+            <p style="margin-bottom: 5px; margin-left: 10px">36% OFF</p>
+          </div>
+          <h4>Offer Price ₹ 3,199</h4>
+        </div>
+      </div>
+      <div class="ss d-flex justify-content-around">
+        <div class="sq">
+          <img src="ko8.png" style="width: 375px; height: 370px" />
+          <h4 class="h">
+            RADO 50MM NATE Analog Watch Pure Steel - For Men JR2627
+          </h4>
+          <div class="d-flex">
+            <del><h5 style="opacity: 0.6">M.R.P. ₹5,999</h5> </del>
+            <p style="margin-bottom: 5px; margin-left: 10px">50% OFF</p>
+          </div>
+          <h4>Offer Price ₹ 2,999</h4>
+        </div>
+        <div class="sq">
+          <img src="ko22.png" style="width: 375px; height: 370px" />
+          <h4 class="h">San Martin Turbine Dial Pilot Watc h-SNO132G-1</h4>
+          <div class="d-flex">
+            <del><h5 style="opacity: 0.6">M.R.P. ₹2,999</h5> </del>
+            <p style="margin-bottom: 5px; margin-left: 10px">29% OFF</p>
+          </div>
+          <h4>Offer Price ₹ 2,130</h4>
+        </div>
+        <div class="sq">
+          <img src="ko13.png" style="width: 375px; height: 370px" />
+          <h4 class="h">Gerald Charles Maestro Automati c Wrist Watch</h4>
+          <div class="d-flex">
+            <del><h5 style="opacity: 0.6">M.R.P. ₹3,499</h5> </del>
+            <p style="margin-bottom: 5px; margin-left: 10px">45% OFF</p>
+          </div>
+          <h4>Offer Price ₹ 1,925</h4>
+        </div>
+        <div class="sq">
+          <img src="ko21.png" style="width: 375px; height: 370px" />
+          <h4 class="h">
+            JAINX Premium Day and Date Function Golden Chain Analog Watch
+          </h4>
+          <div class="d-flex">
+            <del><h5 style="opacity: 0.6">M.R.P. ₹2,999</h5> </del>
+            <p style="margin-bottom: 5px; margin-left: 10px">34% OFF</p>
+          </div>
+          <h4>Offer Price ₹ 1,999</h4>
+        </div>
+      </div>
+      <footer class="footer p-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <h2>GeeksforGeeks</h2>
+            </div>
+            <div class="col-md-3">
+              <h5>About Us</h5>
+              <p>
+                GeeksforGeeks is a leading platform that provides computer
+                science resources and coding challenges for programmers and
+                technology enthusiasts along with interview and exam
+                preparations for upcoming aspirants.
+              </p>
+            </div>
+            <div class="col-md-3">
+              <h5>Contact Us</h5>
+              <ul class="list-unstyled">
+                <li>Email: anshum25506@gmail.com</li>
+                <li>Phone: +91 7698895249</li>
+                <li>Address: B-806 Savvy Strata,Ahmedabad</li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h5>Follow Us</h5>
+              <ul class="list-inline footer-links">
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="https://www.instagram.com">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <hr />
+          <div class="row">
+            <div class="col-md-6">
+              <p>&copy; 2024 Your Website. All rights reserved.</p>
+            </div>
+            <div class="col-md-6 text-end">
+              <ul class="list-inline">
+                <li class="list-inline-item">
+                  <a href="#" class="text-white"> Privacy Policy </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-white"> Terms of Service </a>
+                </li>
+                <li class="list-inline-item">
+                  <a href="#" class="text-white"> Sitemap </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </body>
+    <div class="outer-wrapper">
+      <div class="wrapper">
+        <div class="slide one">
+          <h1>3D Model Viewer</h1>
+          <model-viewer
+            src="watch.glb"
+            alt="A 3D model of something"
+            auto-rotate
+            camera-controls
+          >
+          </model-viewer>
+        </div>
+        <div class="slide two"></div>
+        <div class="slide three"></div>
+        <div class="slide four"></div>
+      </div>
+    </div>
+  </body>
+</html>
